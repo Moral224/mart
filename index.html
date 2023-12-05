@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8 " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+  </head>
+  <body>
+    <style>
+        #outter{
+            height: 88vh;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            background-image: url(images/giphy\ \(1\).gif);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 2px 2px black;
+        }
+        #inner{
+            padding-top: 30px;
+            
+        }
+        #mart{
+            width: 70%;
+        }
+    </style>
+    <center>
+    <marquee behavior="" direction="right"> <h1 style="text-decoration: underline;">Mini mart</h1></marquee>
+        <div class="w-75" id="outter">
+        <div id="showErr"></div>
+        <div id="inner">
+        <!-- <input type="text" id="mart" placeholder="09023318370" autofocus class="p-2"> -->
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label text-light">Enter your item here👇</label>
+            <input type="text" class="form-control" id="mart" placeholder="Enter to add your item" autofocus>
+        </div>
+        <button onclick="check()" class="btn btn-dark ms-3 ps-4 pe-4">Add</button>
+
+
+
+        <button onclick="typeU()" class="btn btn-dark mt-4 ms-4">Add to start</button>
+        <button onclick="typeE()" class="btn btn-dark mt-4 ms-4">Delete last</button>
+        <button onclick="typeI()" class="btn btn-dark mt-4 ms-4">Delete any</button>
+        <button onclick="typeV()" class="btn btn-dark mt-4 ms-4">Delete all</button>
+        <button onclick="typeQ()" class="btn btn-dark mt-4 ms-4">Edit any</button>
+    </div>
+        <div id="displayOutput"></div>
+    </div>
+    </center>
+
+    <script src="index.js"></script>
+        </body> 
+</html>
+
+

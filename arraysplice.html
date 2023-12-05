@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="action()">Action</button>
+    <div id="showArray"></div>
+
+
+    <script>
+    var arrayOfStudent = ['Zolu', 'Bolu', 'Idowu', 'Iyanuoluwa', 'seun', 'iyanu', 'jude', 'Timileyin', 'Ogunjimi', 'Iroyinogunkiitan'];
+    console.log(arrayOfStudent);
+
+    for (index = 0; index < arrayOfStudent.length; index++) {
+        var element = arrayOfStudent[index];
+        showArray.innerHTML +=`<p>${index+1},${element}</p>`
+    }
+
+    arrayOfStudent.map((names)=>{
+            showArray.innerHTML +=`<p>${names}</p>`
+    })
+    
+    function action() {
+        var check = confirm('Are you sure you want to delete, bad thing will happen oo if your are not sure')
+        console.log(check);
+        
+        
+        if (check==true) {
+            arrayOfStudent.splice(0,arrayOfStudent.length > 0)
+            console.log(arrayOfStudent);
+
+        }else{
+            console.log(arrayOfStudent);
+        }
+    }
+</script>
+</body>
+</html>
